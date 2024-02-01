@@ -9,10 +9,13 @@ langchainを使って遊んでみる。
 ```
 langchain_work/
   ┣src/
+  ┃ ┣agent_serp.py(SERPAPIを用いてGoogle検索の結果を利用して出力)
+  ┃ ┣agent_url.py(URLを指定してそのテキストを利用して出力)
   ┃ ┣chat_memory_redis.py(Redisを使って会話履歴を永続化)
   ┃ ┣outout_parse_datetime.py(OutputParserでdatetime型の出力指定)
   ┃ ┣outout_parse_pydantic.py(Pydanticを使って出力指定)
-  ┃ ┗outout_parse.py(OutputParserで,区切りのリストの出力指定)
+  ┃ ┣outout_parse.py(OutputParserで,区切りのリストの出力指定)
+  ┃ ┗set_config.py(環境変数系のセット)
   ┗docs/
     ┗上記のsrc/のコードに対応したメモファイル群
 ```
